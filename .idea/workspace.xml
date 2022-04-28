@@ -11,7 +11,6 @@
       <change afterPath="$PROJECT_DIR$/.stylelintrc.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Rakefile" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/assets/config/manifest.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/assets/images/.keep" afterDir="false" />
@@ -104,6 +103,7 @@
       <change afterPath="$PROJECT_DIR$/tmp/pids/.keep" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vendor/.keep" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,7 +255,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1651157961268</updated>
-      <workItem from="1651157973556" duration="4027000" />
+      <workItem from="1651157973556" duration="5197000" />
     </task>
     <servers />
   </component>
