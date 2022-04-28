@@ -15,11 +15,11 @@ test:
   username: tecmint
   password: gilles
 
-staging:
-  url: <%= ENV['DATABASE_URL'] %>
+#staging:
+#  url: <%#= ENV['DATABASE_URL'] %>
 
-production:
-  url: <%= ENV['DATABASE_URL'] %>
+#production:
+#  url: <%#= ENV['DATABASE_URL'] %>
 
 # SQLite. Versions 3.8.0 and up are supported.
 #   gem install sqlite3
