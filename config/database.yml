@@ -3,7 +3,6 @@ development:
   encoding: unicode
   database: blog
   pool: 5
-  host: localhost
   username: go-groups
   password: 
 
