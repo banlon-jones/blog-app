@@ -3,23 +3,28 @@ development:
   encoding: unicode
   database: blog
   pool: 5
-  host: 127.0.0.1
-  username: tecmint
-  password: gilles
+  username: go-groups
+  password: 
 
 test:
   adapter: postgresql
   encoding: unicode
   database: blog
   pool: 5
-  username: tecmint
-  password: gilles
+  username: go-groups
+  password: 
 
 staging:
   url: <%= ENV['DATABASE_URL'] %>
 
 production:
   url: <%= ENV['DATABASE_URL'] %>
+
+#staging:
+#  url: <%#= ENV['DATABASE_URL'] %>
+
+#production:
+#  url: <%#= ENV['DATABASE_URL'] %>
 
 # SQLite. Versions 3.8.0 and up are supported.
 #   gem install sqlite3
