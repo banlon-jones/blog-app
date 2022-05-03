@@ -7,4 +7,3 @@ class User < ApplicationRecord
     posts.order('created_at Desc').limit(3)
   end
 end
-
