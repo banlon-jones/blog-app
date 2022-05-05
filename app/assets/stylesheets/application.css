@@ -14,10 +14,10 @@
  *= require_self
  */
 .sm {
-    height: 60px;
+  height: 60px;
 }
 
 a {
-    text-decoration: none;
-    color: #2E2F30;
+  text-decoration: none;
+  color: #2E2F30;
 }
