@@ -1,1 +1,45 @@
-<h1>user profile</h1>
+<div class="container my-5">
+  <div>
+      <div class="card my-3">
+        <div class="card-body row">
+          <div class="col-2">
+            <%= image_tag image_url(@user.photo), :class => "img-thumbnail sm"  %>
+          </div>
+          <div class="col-10">
+            <div class="d-flex justify-content-between">
+              <h1> <%= @user.name %> </h1>
+              <small class="align-self-end"> Number of posts: <%= @user.post_counter || 0 %> </small>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title">
+      <h3> Bio</h3>
+      <p>
+        <%= @user.bio %>
+      </p>
+    </div>
+  </div>
+  <% @user.recent_post.each do |post| %>
+    <a href="post/<%= post.id %>">
+    <div class="card my-3">
+      <div class="card-body">
+        <h3><%= post.title %></h3>
+        <div>
+          <%= post.text %>
+        </div>
+        <div>
+          <small> comments: 0  </small> <small> likes: 0 </small>
+        </div>
+        <div>
+        </div>
+      </div>
+    </div>
+    </a>
+  <% end %>
+  <div>
+    <a href="/users/<%= @user.id %>/posts" class="btn btn-primary"> Show all post </a>
+  </div>
+</div>

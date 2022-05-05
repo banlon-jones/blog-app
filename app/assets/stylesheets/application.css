@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+.sm {
+    height: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: #2E2F30;
+}
