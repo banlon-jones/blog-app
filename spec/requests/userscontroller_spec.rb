@@ -11,7 +11,7 @@ RSpec.describe 'Users', type: :request do
     end
 
     it 'response body includes correct text' do
-      expect(response.body).to include('list of users')
+      expect(response.body).to include('list all users')
     end
 
     it 'renders a correct template' do
@@ -21,13 +21,12 @@ RSpec.describe 'Users', type: :request do
 
   describe 'Get #show' do
     before(:each) do
-      get '/users/798'
+      get '/users/1'
     end
 
     it 'GET request return correct response' do
       expect(response).to have_http_status(:ok)
       expect(response).to render_template(:show)
-      expect(response.body).to include('user profile')
     end
   end
 end
