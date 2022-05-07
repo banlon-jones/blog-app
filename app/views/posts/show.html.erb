@@ -1,3 +1,24 @@
-<h1>
-  show post
-</h1>
+<section class='container'>
+  <div class='card my-5'>
+    <div class='card-body'>
+      <h3><%= @post.title %> </h3>
+      <p><%= @post.text %></P>
+    </div>
+  </div>
+  <div>
+    <%= form_with url: "/posts/#{@post.id}/likes", scope: :like do |form| %>
+      <%= form.submit "Like this post", class: "btn btn-success"%>
+    <% end %>
+  </div>
+  <div class='comment_card'>
+    <% Comment.all.where(post_id: @post.id).each do |comment| %>
+      <% user = User.all.find(comment.author_id) %>
+      <div class="card-body">
+        <p><b><%= user.name %>: </b><%= comment.text %></p>
+      </div>
+    <%end%>
+  </div>
+  <div>
+    <%= render partial: "shared/create_comment", local: { post: @post }%>
+  </div>
+</section>

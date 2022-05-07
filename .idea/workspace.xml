@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3f69e7a-6377-4f3c-b3da-93d22e5f6230" name="Changes" comment="setting up associations between models and writing sql queries with Active Record">
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
+    <list default="true" id="a3f69e7a-6377-4f3c-b3da-93d22e5f6230" name="Changes" comment="linter errors fix">
+      <change beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="ERB File" />
+        <option value="Ruby Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -35,6 +43,7 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -163,7 +172,8 @@
       <workItem from="1651611528099" duration="1836000" />
       <workItem from="1651614030927" duration="8036000" />
       <workItem from="1651694994879" duration="13561000" />
-      <workItem from="1651777929118" duration="6292000" />
+      <workItem from="1651777929118" duration="7068000" />
+      <workItem from="1651874770101" duration="21005000" />
     </task>
     <task id="LOCAL-00001" summary="setting up associations between models and writing sql queries with Active Record">
       <created>1651614545770</created>
@@ -172,7 +182,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651614545770</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="adding forms">
+      <created>1651894803561</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651894803561</updated>
+    </task>
+    <task id="LOCAL-00003" summary="linter errors fix">
+      <created>1651895484367</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1651895484367</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,9 +215,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="setting up associations between models and writing sql queries with Active Record" />
-    <option name="LAST_COMMIT_MESSAGE" value="setting up associations between models and writing sql queries with Active Record" />
+    <MESSAGE value="adding forms" />
+    <MESSAGE value="linter errors fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="linter errors fix" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/blog_app@Development__blog_app.rcov" NAME="Development: blog-app Coverage Results" MODIFIED="1651777944953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="blog-app" />
+    <SUITE FILE_PATH="coverage/blog_app@Development__blog_app.rcov" NAME="Development: blog-app Coverage Results" MODIFIED="1651876084343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="blog-app" />
   </component>
 </project>

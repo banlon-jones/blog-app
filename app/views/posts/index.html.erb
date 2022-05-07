@@ -1,3 +1,39 @@
-<h1>
-  post index view
-</h1>
+<section class='container'>
+  <div>
+    <div class="card my-3">
+      <div class="card-body row">
+        <div class="col-2">
+          <%= image_tag image_url('https://avatars.githubusercontent.com/u/52419124?v=4'), :class => "img-thumbnail sm"  %>
+        </div>
+        <div class="col-10">
+          <div class="d-flex justify-content-between">
+            <h1> <%= @user.name %> </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <% @posts.each do |post| %>
+    <a href="posts/<%= post.id %>">
+    <div class="card my-3">
+      <div class="card-body">
+        <h3><%= post.title %></h3>
+        <div>
+          <%= post.text %>
+        </div>
+        <div>
+        </div>
+      </div>
+    </div>
+    </a>
+    <%if Comment.all.where(post_id: post.id).length != 0 %>
+      <div class='card p-4 my-3'>
+        <% Comment.all.where(post_id: post.id).each do |comment| %>
+          <% user = User.all.find(comment.author_id) %>
+          <p><b><%= user.name %>: </b><%= comment.text %></p>
+        <%end%>
+      </div>
+    <%end%>
+  <% end %>
+</section>

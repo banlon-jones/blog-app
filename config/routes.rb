@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root "users#index"
-  get "/users/:id", to: "users#show"
-  get "/users/:id/posts", to: "users#posts"
-  get "/users/:id/post/:id", to: "users#post"
-  get "/posts/", to: "posts#index"
-  get "/posts/:id", to: "posts#show"
+  resources :users, only: %i[index show] do
+    resources :posts, only: %i[index create new show]
+  end
+  resources :posts do
+    resources :comments, only: [:create]
+    resources :likes, only: [:create]
+  end
 end
