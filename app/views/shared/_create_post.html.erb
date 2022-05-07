@@ -1,0 +1,10 @@
+<div class="card mt-5">
+  <div class="card-body">
+    <h3>New Post</h3>
+    <%= form_with model: @post, scope: :post  do |form| %>
+      <%= form.text_field :title, :class => "form-control my-4", placeholder: 'Post title'%>
+      <%= form.text_area :text, :class => "form-control my-4", placeholder: 'Post Content' %>
+      <%= form.submit "Save" %>
+    <% end %>
+  </div>
+</div>

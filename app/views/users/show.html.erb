@@ -22,8 +22,11 @@
       </p>
     </div>
   </div>
+  <div class="row">
+    <a href="/users/<%= @user.id %>/posts/new" class="btn btn-success"> Create post </a>
+  </div>
   <% @user.recent_post.each do |post| %>
-    <a href="post/<%= post.id %>">
+    <a href="<%= @user.id %>/posts/<%= post.id %>">
     <div class="card my-3">
       <div class="card-body">
         <h3><%= post.title %></h3>

@@ -1,0 +1,9 @@
+<div class="card">
+  <div class="card-body">
+    <h3>New Comment</h3>
+    <%= form_with model: @comment, url: "/posts/#{@post.id}/comments", scope: :comment  do |form| %>
+      <%= form.text_field :text, :class => "form-control my-2", placeholder: 'Leave a Comment ...'%>
+      <%= form.submit "Comment" %>
+    <% end %>
+  </div>
+</div>
