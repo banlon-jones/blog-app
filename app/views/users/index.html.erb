@@ -11,7 +11,7 @@
           <div class="col-10">
             <div class="d-flex justify-content-between">
               <h1> <%= user.name %> </h1>
-              <small class="align-self-end"> Number of posts: <% user.post_counter %> </small>
+              <small class="align-self-end"> Number of posts: <% user.post_counter || 0 %> </small>
             </div>
           </div>
         </div>
