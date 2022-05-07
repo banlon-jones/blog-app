@@ -7,7 +7,6 @@ RSpec.describe Like, type: :model do
     before { subject.save }
 
     it 'check if it increases the posts' do
-      prev = Post.find(1).LikesCounter
       subject.update_likes_counter
       expect(Post.find(1).LikesCounter).to eq(1)
     end

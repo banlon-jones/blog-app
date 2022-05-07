@@ -16,7 +16,8 @@ RSpec.describe Post, type: :model do
 
     it 'tests if title more than 250 characters to be invalid' do
       subject.title = 'a football passing play in which the receiver runs downfield before turning towards the middle of
-       the fielda football passing play in which the receiver runs downfield before turning towards the middle of the field'
+       the fielda football passing play in which the receiver runs downfield before turning
+towards the middle of the field'
       expect(subject).to_not be_valid
     end
   end
