@@ -33,6 +33,4 @@ class PostsController < ApplicationController
   def allowed_params
     params.require(:post).permit(:title, :text, :user_id)
   end
-
 end
-
