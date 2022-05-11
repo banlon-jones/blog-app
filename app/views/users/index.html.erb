@@ -1,3 +1,17 @@
+<div class="my-2">
+  <div class="container">
+    <% if user_signed_in? %>
+      <p> Welcome <%=current_user.name %></p>
+      <%= button_to "Sign out", destroy_user_session_path, :method => :delete  %>
+    <% else %>
+      <%= button_to 'Log In', "/users/sign_in" %>
+    <% end %>
+    <% if @users.empty?  ||  @users.nil? %>
+      <p> There are no users </p>
+    <%end%>
+  </div>
+</div>
+
 <div class="container">
   <div>
     <h3> list all users </h3>
@@ -6,7 +20,8 @@
       <div class="card my-3">
         <div class="card-body row">
           <div class="col-2">
-            <%= image_tag image_url(user.photo), :class => "img-thumbnail sm"  %>
+            <%= image_tag image_url('https://www.kindpng.com/picc/m/136-1369892_avatar-people-person-business-user-man-character-avatar.png'),
+                          :class => "img-thumbnail sm"  %>
           </div>
           <div class="col-10">
             <div class="d-flex justify-content-between">
