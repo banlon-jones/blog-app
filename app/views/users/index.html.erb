@@ -16,7 +16,6 @@
   <div>
     <h3> list all users </h3>
     <% @users.each do |user|%>
-      <a href="/users/<%= user.id %>">
       <div class="card my-3">
         <div class="card-body row">
           <div class="col-2">
@@ -25,13 +24,14 @@
           </div>
           <div class="col-10">
             <div class="d-flex justify-content-between">
-              <h1> <%= user.name %> </h1>
-              <small class="align-self-end"> Number of posts: <% user.post_counter || 0 %> </small>
+              <%= link_to user_path(user.id) do %>
+                <h2><%= user.name%></h2>
+              <% end %>
+              <small class="align-self-end"> Number of posts: <%= user.post_counter || 0 %> </small>
             </div>
           </div>
         </div>
       </div>
-    </a>
     <% end %>
   </div>
 </div>
