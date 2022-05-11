@@ -3,7 +3,8 @@ require 'rails_helper'
 RSpec.describe 'user posts index', type: :feature do
   describe 'User' do
     before(:each) do
-      @user = User.create! name: 'jones', password: 'jones2000', email: 'jones@gmail.com', post_counter: 0, bio: "testing"
+      @user = User.create! name: 'jones', password: 'jones2000', email: 'jones@gmail.com', post_counter: 0,
+                           bio: 'testing'
       visit new_user_session_path
       fill_in 'Email', with: 'jones@gmail.com'
       fill_in 'Password', with: 'jones2000'
@@ -29,6 +30,5 @@ RSpec.describe 'user posts index', type: :feature do
     it 'can see some of the post\'s body.' do
       expect(page).to have_content 'jones'
     end
-
   end
 end

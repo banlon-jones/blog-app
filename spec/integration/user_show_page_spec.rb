@@ -3,7 +3,8 @@ require 'rails_helper'
 RSpec.describe 'Login', type: :feature do
   describe 'User' do
     before(:each) do
-      @user1 = User.create! name: 'jones', password: 'jones2000', email: 'jones@gmail.com', post_counter: 0, bio: "testing"
+      @user1 = User.create! name: 'jones', password: 'jones2000', email: 'jones@gmail.com', post_counter: 0,
+                            bio: 'testing'
       visit new_user_session_path
       fill_in 'Email', with: 'jones@gmail.com'
       fill_in 'Password', with: 'jones2000'
